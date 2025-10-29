@@ -1,13 +1,13 @@
-from simulator.base import (
+from .base import (
     Simulator,
     rescale,
     generate_simulation_dataset,
     generate_calibration_dataset,
 )
-from simulator.pendulum import Pendulum
-from simulator.pure_gaussian import PureGaussian
-from simulator.light_tunnel import LightTunnel
-from simulator.wind_tunnel import WindTunnel
+from .pendulum import Pendulum
+from .pure_gaussian import PureGaussian
+from .light_tunnel import LightTunnel
+from .wind_tunnel import WindTunnel
 
 
 def get_simulator(name: str, **kwargs) -> Simulator:
